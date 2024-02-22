@@ -11,3 +11,88 @@ body {
 }
 
 /* CALCULATOR */
+.calculator {
+  width: 300px;
+  margin: 100px auto 30px;
+  background-image: linear-gradient(270deg, #eeee 0%, #cdcdcd 100%);
+  border-radius: 10px;
+
+}
+
+/* Header */
+header {
+  text-align: center;
+}
+
+/* Display */
+.display {
+  background-color: #000;
+  font-family: "Seven Segment", sans-serif;
+  color: #09d297;
+  font-size: 32px;
+  text-align: right;
+  padding: 16px 10px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  padding: 15px;
+}
+
+.numbers {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* debug */
+  /* background-color: lightcoral; */
+  /* height: 300px; */
+}
+
+.operations {
+  width: 25%;
+  
+  /* debug */
+  /* background-color: lightgreen; */
+  /* height: 300px; */
+}
+
+.numbers button {
+  width: calc(100% / 3 - 10px);
+  margin-right: 10px;
+}
+
+.operations button {
+  width: 100%;
+  background-color: #77A8B0;
+  color: white;
+}
+
+button.zero {
+  flex-grow: 1 ;
+}
+
+button {
+  font-size: 18px;
+  background-color: #BBBBBB;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border-top: 1px solid #eeee;
+  border-right: 1px solid #eeee;
+  border-bottom: 2px solid #898989;
+  border-left: 2px solid #898989;
+}
+
+button.orange {
+  background-color: #ffa500;
+  color: white;
+}
+
+button:hover {
+  border-bottom: 1px solid #eeee;
+  border-left: 1px solid #eeee;
+  border-top: 2px solid #898989;
+  border-right: 2px solid #898989;
+}
